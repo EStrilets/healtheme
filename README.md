@@ -9,11 +9,11 @@ common - code shared between client and server
 <p> Make sure that you have a PostgreSQL and Redis pre-installed </p>
 <p>1. Clone the repository </p>
 <br/>
-2. CD into the repository and run yarn or npm install
+<p> 2. CD into the repository and run yarn or npm install </p>
 <br/>
-3. Create a postgres database and a table called users, as defined in ./backend/database.sql
+<p> 3. Create a postgres database and a table called users, as defined in ./backend/database.sql </p>
 <br/>
-4. Create a file named .env in ./backend and make sure it has the following variables defined:
+<p> 4. Create a file named .env in ./backend and make sure it has the following variables defined: </p>
 <br/>
 <ul> 
   <li>DATABASE_NAME= </li>
