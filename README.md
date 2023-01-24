@@ -6,6 +6,7 @@ server - node.js backend
 common - code shared between client and server
 
 <h2> Installation </h2>
+<p> Make sure that you have a PostgreSQL and Redis pre-installed </p>
 <p>1. Clone the repository </p>
 <br/>
 2. CD into the repository and run yarn or npm install
