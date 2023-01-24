@@ -2,7 +2,7 @@
 
 <h2> Installation </h2>
 
-<p> Open the project in your editor and from root directory run docker-compose up --build <p>
+<p> Open the project in your editor and from project directory run docker-compose up --build <p>
 <p> OR second option </p>
 <p> Make sure that you have a PostgreSQL and Redis pre-installed </p>
 <p>1. Clone the repository </p>
