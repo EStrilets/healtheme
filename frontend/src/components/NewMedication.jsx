@@ -5,7 +5,7 @@ import { AccountContext } from "../context/AccountContext";
 function NewMedication() {
   const { user } = useContext(AccountContext);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const [formData, setFormData] = useState({
     name: "",
     dosage_units: "",
@@ -24,7 +24,7 @@ function NewMedication() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({...formData, user_id: user.id}),
+      body: JSON.stringify({...formData, user_id: user.user_id}),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -42,7 +42,7 @@ function NewMedication() {
             w={{ base: "90%", md: "500px" }}
             m="auto"
             justify="center"
-            h="100vh"
+            h="80vh"
             spacing="1rem"
           >
             <label>
