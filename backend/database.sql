@@ -12,5 +12,3 @@ CREATE TABLE medications(
     notes VARCHAR(200),
     user_id INTEGER REFERENCES users(id)
 );
-
-INSERT INTO users(username, passhash) values($1,$2);

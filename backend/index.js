@@ -5,12 +5,12 @@ const cors = require("cors");
 const authRouter = require("./routes/auth");
 const medicationRouter = require("./routes/medications");
 const session = require("express-session");
-const Redis = require("ioredis");
-const RedisStore  = require("connect-redis")(session); 
+// const Redis = require("ioredis");
+// const RedisStore  = require("connect-redis")(session); 
 const server = require("http").createServer(app);
 require("dotenv").config();
 
-const redisClient = new Redis();
+// const redisClient = new Redis();
 
 app.use(helmet());
 app.use(
@@ -25,7 +25,7 @@ app.use(
     secret: process.env.COOKIE_SECRET,
     credentials: true,
     name: "sid",
-    store: new RedisStore({ client: redisClient }),
+    // store: new RedisStore({ client: redisClient }),
     resave: false,
     saveUninitialized: false,
     cookie: {
